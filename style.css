@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Universals */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #333;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+h1 i {
+  margin: 0 1.5rem;
+}
+
+/* Container & Form */
+
+.container form {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 50px;
+  width: 900px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.balance-container {
+  margin: 0 4rem;
+}
+
+.balance-container h4 {
+  font-size: 1.8rem;
+  margin: 2rem;
+}
+
+.input-container {
+  margin: 0 4rem;
+}
+
+.input-wrap {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.input-wrap label {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.input-wrap input {
+  border-radius: 5px;
+  padding: 7px;
+  text-align: center;
+  width: 200px;
+  font-size: 1.2rem;
+}
+
+.time {
+  flex-direction: row;
+}
+
+/* Buttons */
+
+.time button {
+  padding: 10px;
+  margin: 1rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.time button:hover {
+  cursor: pointer;
+}
+
+.time button:active {
+  transform: scale(0.96);
+}
+
+.btn {
+  width: 100%;
+  background-color: #f9bb33;
+  padding: 15px 70px;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.btn:hover {
+  cursor: pointer;
+  
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .balance-container h4 {
+    text-align: center;
+  }
+
+  .container form {
+    flex-direction: column;
+    max-width: 550px;
+  }
+
+  #final-balance {
+    margin-bottom: 2rem;
+  }
+
+  .container-top h1 {
+    text-align: center;
+    font-size: 1.8rem
+  }
+  
+};
+

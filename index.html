@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3b60ca4704.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Compound Interest Calculator</title>
+</head>
+<body>
+  <div class="container-top">
+    <h1><i class="fa-solid fa-coins heading"></i>Compound Interest Calculator</h1>
+  </div>
+  <div class="container">
+    <form id="savings-form">
+      <div class="balance-container flex">
+        <img src="./img/savings-pig.png" alt="" id="pig">
+        <h4>Final Balance</h4>
+        <h2 id="final-balance"><span>$ </span></h2>
+      </div>
+      <div class="input-container flex">
+        <div class="input-wrap">
+          <label for="">Starting Amount*</label>
+          <input type="number" id="principal">
+        </div>
+        <div class="input-wrap">
+          <label for="">Years Invested*</label>
+          <input type="number" id="time-period">
+        </div>
+        <div class="input-wrap">
+          <label for="">Total Interest Rate*</label>
+          <input type="number" id="interest-rate">
+        </div>
+        <div class="input-wrap">
+          <button class="btn" id="calc-btn">Calculate</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
