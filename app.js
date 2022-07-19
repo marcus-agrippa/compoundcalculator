@@ -15,7 +15,6 @@ function futureValue(e) {
   t = parseFloat(time.value);
   fv = p*(Math.pow((1 + r / 100), t));
   total = fv.toFixed(2);
-  console.log(total);
 
   if(isFinite(total)) {
     finalBalance.innerHTML = `$${total}`;
